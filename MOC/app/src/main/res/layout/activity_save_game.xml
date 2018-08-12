@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:gravity="center"
+	android:background="@color/background_main">
+    
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:layout_margin="5dp"/>
+
+	<LinearLayout
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/layout_main"
+		android:background="@color/background_base">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="@string/save"
+			style="@style/MainTextStyle"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:orientation="vertical"
+			android:background="@color/background_space">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot1_info"
+					android:background="@drawable/info_background"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="slot 1"
+					style="@style/MainButtonStyle"
+					android:id="@+id/slot1"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot1_delete"
+					android:background="@drawable/close_background"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot2_info"
+					android:background="@drawable/info_background"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="slot 2"
+					style="@style/MainButtonStyle"
+					android:id="@+id/slot2"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot2_delete"
+					android:background="@drawable/close_background"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot3_info"
+					android:background="@drawable/info_background"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="slot 3"
+					style="@style/MainButtonStyle"
+					android:id="@+id/slot3"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot3_delete"
+					android:background="@drawable/close_background"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot4_info"
+					android:background="@drawable/info_background"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="slot 4"
+					style="@style/MainButtonStyle"
+					android:id="@+id/slot4"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot4_delete"
+					android:background="@drawable/close_background"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot5_info"
+					android:background="@drawable/info_background"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="slot 5"
+					style="@style/MainButtonStyle"
+					android:id="@+id/slot5"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:id="@+id/slot5_delete"
+					android:background="@drawable/close_background"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="@string/back"
+			android:id="@+id/back"
+			style="@style/MainButtonStyle"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:textColor="@color/text_color_base"
+		android:layout_margin="5dp"
+		android:gravity="bottom|left"
+		android:textSize="15sp"
+		android:layout_weight="1"
+		android:text="@string/app_version"/>
+	
+</LinearLayout>

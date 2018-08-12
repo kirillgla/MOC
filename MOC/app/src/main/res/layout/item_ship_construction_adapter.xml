@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:background="@color/background_base">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_margin="5dp"
+				android:id="@+id/shipImageView"
+				android:background="@color/background_group"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				style="@style/MainTextStyle.Small"
+				android:text="Name: Frigate"
+				android:id="@+id/nameTextView"
+				android:layout_weight="1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				style="@style/MainTextStyle.Small"
+				android:text="Hp: 15"
+				android:id="@+id/hpTextView"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				style="@style/MainTextStyle.Small"
+				android:layout_weight="1"
+				android:id="@+id/maintenanceTextView"
+				android:text="Maint.: 1.25$"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				style="@style/MainTextStyle.Small"
+				android:text="Attack: 15"
+				android:id="@+id/attackTextView"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				style="@style/MainTextStyle.Small"
+				android:text="Colonizer: no"
+				android:id="@+id/canColonizeTextView"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				style="@style/MainTextStyle.Small"
+				android:id="@+id/speedTextView"
+				android:text="Speed: 2"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				style="@style/MainTextStyle.Small"
+				android:text="Cost: 20"
+				android:id="@+id/costTextView"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			style="@style/MainButtonStyle.Small"
+			android:text="@string/build"
+			android:id="@+id/build"/>
+
+	</LinearLayout>
+
+</LinearLayout>

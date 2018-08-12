@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_main">#6464FF</color>
+    <color name="background_base">#8080FF</color>
+    <color name="background_group">#A0A0E0</color>
+    <color name="background_space">#202060</color>
+
+    <color name="text_color_base">#FFFFFF</color>
+    <color name="text_color_bad">#FF0000</color>
+    <color name="text_color_worse">#FF8040</color>
+    <color name="text_color_average">#FFFF00</color>
+    <color name="text_color_better">#B0FF20</color>
+    <color name="text_color_good">#20E04C</color>
+
+    <color name="owner_color_0">#FFFFFF</color>
+    <color name="owner_color_1">#FF0000</color>
+    <color name="owner_color_2">#00FF00</color>
+    <color name="owner_color_3">#00FFFF</color>
+    <color name="owner_color_4">#FFFF00</color>
+    <color name="owner_color_5">#8040FF</color>
+    <color name="owner_color_6">#FF00FF</color>
+    <color name="owner_color_7">#C07A57</color>
+
+</resources>

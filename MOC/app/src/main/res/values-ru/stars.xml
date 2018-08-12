@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="star_names">
+        <item>Солнце</item>
+        <item>Альфа</item>
+        <item>Бета</item>
+        <item>Гамма</item>
+        <item>Дельта</item>
+        <item>Эпсилон</item>
+        <item>Звезда 53</item>
+        <item>Звезда 54</item>
+        <item>Звезда 55</item>
+        <item>Звезда 56</item>
+        <item>Китайка</item>
+        <item>Элина</item>
+        <item>Ниа</item>
+        <item>Луракс</item>
+        <item>Шэр</item>
+        <item>Гермонт</item>
+        <item>Фидза</item>
+        <item>Вайрун</item>
+        <item>Искра</item>
+        <item>Жемчуг</item>
+        <item>Немизда</item>
+        <item>Проксима</item>
+        <item>Волк</item>
+        <item>Глизе</item>
+        <item>Облом</item>
+        <item>Светлая</item>
+        <item>Тайна</item>
+        <item>Надежда</item>
+        <item>Надёжная</item>
+        <item>Орион</item>
+        <item>Цифей</item>
+        <item>Скат</item>
+        <item>Мира</item>
+        <item>Медуза</item>
+        <item>Лапис</item>
+        <item>Ариэль</item>
+		<item>Вриат</item>
+		<item>Мэитс</item>
+		<item>Ойуг</item>
+		<item>Лиор</item>
+		<item>Ге</item>
+		<item>Рэппет</item>
+		<item>Изоике</item>
+		<item>Клоггот</item>
+		<item>Гли</item>
+		<item>Элпо</item>
+		<item>Бу</item>
+		<item>Сиух</item>
+		<item>Вэог</item>
+	</string-array>
+</resources>

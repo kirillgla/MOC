@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:gravity="center"
+	android:background="@color/background_space">
+
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:id="@+id/layout_main"
+		android:background="@color/background_base"
+		android:orientation="vertical">
+
+		<HorizontalScrollView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_margin="5dp"
+					android:id="@+id/shipImageView"
+					android:background="@color/background_space"
+					android:src="@drawable/ship01"/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/background_group"
+					android:layout_gravity="center_vertical"
+					android:layout_margin="5dp"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/name"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/hp"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/attack"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/speed"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/canColonize"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/maintenance"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/position"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/destination"
+						android:layout_gravity="end"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/background_group"
+					android:layout_gravity="center_vertical"
+					android:layout_margin="5dp"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/nameTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/hpTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/attackTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/speedTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/canColonizeTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/maintenanceTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/positionTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="error"
+						android:id="@+id/destinationTextView"
+						android:layout_gravity="start"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</HorizontalScrollView>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_margin="5dp"
+				android:id="@+id/gui_item_1"
+				android:layout_gravity="center_vertical"/>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_margin="5dp"
+				android:id="@+id/gui_item_2"
+				android:layout_gravity="center_vertical"/>
+
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:id="@+id/gui_item_3"
+			android:layout_gravity="center_vertical"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/done"
+			style="@style/MainButtonStyle"
+			android:text="@string/done"/>
+
+	</LinearLayout>
+
+</LinearLayout>

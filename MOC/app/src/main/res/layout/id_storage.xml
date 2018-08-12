@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    Этот файл никогда не используется.
+    Но он необходим для того, чтобы класс R.id
+    содержал некоторые величины,
+    которые иначе будут удалены из него
+    при следующей же компиляции.
+    -->
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noShipsMessage">
+        <!--
+        Величина R.id.noShipsMessage
+        используется методом
+        MainActivity.createNoShipsMessage().
+        Позволяет отличить noShipsMessage
+        от других View в bottomView.
+        -->
+    </Space>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipListView">
+        <!--
+        Аналогично,
+        MainActivity.createShipListView().
+        -->
+    </Space>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/launch">
+        <!--
+        Аналогично,
+        MainActivity.createLaunchShipsButton().
+        -->
+    </Space>
+
+	<Space
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/save_name_editText">
+		<!--
+		В MainActivity.save(int).
+		EditText внутри AlertDialog.
+		-->
+	</Space>
+
+</LinearLayout>

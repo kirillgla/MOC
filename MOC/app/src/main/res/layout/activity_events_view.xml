@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background_main">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="5dp"
+		android:background="@color/background_base"
+		android:id="@+id/view_main"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/MainTextStyle"
+			android:layout_gravity="top"
+			android:text="Turn 0"
+			android:id="@+id/turn"/>
+
+		<ListView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:id="@+id/eventListView">
+			<!--этому listView не нужен фон, т.к. он определяется в каждом из его элементов-->
+		</ListView>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/background_group"
+			android:layout_margin="5dp"
+			android:orientation="vertical">
+			
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="start"
+				android:id="@+id/doNotShowAgainCheckBox"
+				android:textSize="15sp"
+				android:textColor="@color/text_color_base"
+				android:text="@string/doNotShowThisAgain"/>
+			
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/MainButtonStyle"
+				android:text="@string/delete_checked"
+				android:id="@+id/delete_checked"/>
+			
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/MainButtonStyle"
+				android:text="@string/back"
+				android:id="@+id/back"/>
+			
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

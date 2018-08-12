@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="star_names">
+        <item>Sol</item>
+        <item>Alpha</item>
+        <item>Beta</item>
+        <item>Gamma</item>
+        <item>Delta</item>
+        <item>Epsilon</item>
+        <item>Star 53</item>
+        <item>Star 54</item>
+        <item>Star 55</item>
+        <item>Star 56</item>
+        <item>Chiny</item>
+        <item>Elina</item>
+        <item>Nia</item>
+        <item>Lurax</item>
+        <item>Cher</item>
+        <item>Hermont</item>
+        <item>Fidiz</item>
+        <item>Vairuno</item>
+        <item>Spark</item>
+        <item>Emerald</item>
+        <item>Nemesis</item>
+        <item>Proxima</item>
+        <item>Wolf</item>
+        <item>Gliese</item>
+        <item>Fiasco</item>
+        <item>Light</item>
+        <item>Secret</item>
+        <item>Hope</item>
+        <item>Reliable</item>
+        <item>Orion</item>
+        <item>Cepheus</item>
+        <item>Stingray</item>
+        <item>Peace</item>
+        <item>Jellyfish</item>
+        <item>Lapis</item>
+        <item>Ariel</item>
+		<item>Vriat</item>
+		<item>Maits</item>
+		<item>Oyug</item>
+		<item>Liors</item>
+		<item>Gee</item>
+		<item>Reppeth</item>
+		<item>Izoikka</item>
+		<item>Cloggot</item>
+		<item>Gli</item>
+		<item>Elpo</item>
+		<item>Bu</item>
+		<item>Siuhs</item>
+		<item>Waog</item>
+    </string-array>
+</resources>

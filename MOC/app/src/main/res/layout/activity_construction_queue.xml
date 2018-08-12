@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background_space">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/background_main"
+		android:layout_margin="5dp"
+		android:orientation="vertical"
+		android:id="@+id/layout_main">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/MainTextStyle"
+			android:text="@string/in_queue"/>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="5dp"
+			android:layout_weight="1">
+
+			<!--Здесь будет не более 10 элемнентов, так что можно обойтись без ListView.-->
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:id="@+id/container">
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_margin="5dp"
+					android:padding="10dp"
+					android:background="@color/background_group"
+					android:id="@+id/no_construction_chooser">
+					
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_color_base"
+						android:textSize="15sp"
+						android:gravity="center"
+						android:text="@string/what_to_do"/>
+					
+					<RadioGroup
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@color/background_group">
+
+						<RadioButton
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:id="@+id/tradeChoice"
+							android:text="@string/trade2"
+							android:textSize="15dp"
+							android:textColor="@color/text_color_base"/>
+						
+						<RadioButton
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:id="@+id/storeChoice"
+							android:text="@string/fill_storage"
+							android:textSize="15dp"
+							android:textColor="@color/text_color_base"/>
+
+					</RadioGroup>
+					
+				</LinearLayout>
+				
+			</LinearLayout>
+
+		</ScrollView>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/MainButtonStyle"
+			android:id="@+id/back"
+			android:text="@string/back"/>
+
+	</LinearLayout>
+
+</LinearLayout>

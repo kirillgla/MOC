@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="ai_names">
+		<item>Тёмные</item>
+		<item>Светлые</item>
+		<item>Противник 3</item>
+		<item>Противник 4</item>
+		<item>Противник 5</item>
+		<item>Противник 6</item>
+	</string-array>
+</resources>

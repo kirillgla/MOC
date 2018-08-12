@@ -1,0 +1,330 @@
+<!--<!DOCTYPE[<!ENTITY star SYSTEM "item_star.xml">]>-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:id="@+id/background">
+		
+	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_base">
+        
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:id="@+id/topView">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/menu"
+					style="@style/MainButtonStyle.Medium"
+                    android:id="@+id/menu"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="Turn 0"
+                    android:textColor="@color/text_color_base"
+                    android:layout_margin="5dp"
+                    android:id="@+id/turnNumber"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/turn"
+					style="@style/MainButtonStyle.Medium"
+                    android:id="@+id/turn"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/increase_background"
+                    android:id="@+id/buttonIncrease"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/decrease_background"
+                    android:id="@+id/buttonDecrease"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="+0"
+					android:drawableLeft="@drawable/money"
+					android:drawableStart="@drawable/money"
+					android:id="@+id/money"
+					android:padding="5dp"
+					android:layout_margin="5dp"
+					android:textSize="15sp"
+					android:textColor="@color/text_color_base"
+					android:background="@color/background_group"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="+0"
+					android:drawableLeft="@drawable/science"
+					android:drawableStart="@drawable/science"
+					android:id="@+id/science"
+					android:padding="5dp"
+					android:layout_margin="5dp"
+					android:textSize="15sp"
+					android:textColor="@color/text_color_base"
+					android:background="@color/background_group"/>
+				
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="match_parent"
+					android:layout_margin="5dp"
+					android:background="@drawable/save"
+					android:id="@+id/save"/>
+
+				<ru.barsk.view.AlertView
+					android:layout_width="40dp"
+					android:layout_height="match_parent"
+					android:layout_margin="5dp"
+					android:id="@+id/alerts"/>
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="match_parent"
+					android:layout_margin="5dp"
+					android:background="@drawable/compass"
+					android:id="@+id/map"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        
+    </FrameLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<ScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1"
+            android:id="@+id/singleplayerScrollView"
+            android:background="@color/background_space">
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/singleplayerHorizontalScrollView">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+					android:id="@+id/table"/>
+
+			</HorizontalScrollView>
+
+		</ScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:id="@+id/bottomHorizontalScrollView"
+            android:background="@color/background_base">
+
+		    <LinearLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				android:gravity="center"
+			    android:orientation="horizontal"
+			    android:id="@+id/bottomView">
+
+                <LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+					
+					<ImageView
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_margin="5dp"
+						android:id="@+id/starView"
+						android:layout_gravity="center"
+						android:background="@color/background_space"
+						android:src="@drawable/type42"/>
+					
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/MainButtonStyle.Medium"
+						android:id="@+id/colonize"
+						android:text="@string/colonize"/>
+					
+				</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@color/background_group"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/name"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/owner"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/fertility"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/richness"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/scientific_potential"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/max_population"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="@string/population"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@color/background_group"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="error"
+                        android:id="@+id/nameTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="error"
+                        android:id="@+id/ownerTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:id="@+id/fertilityTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:id="@+id/richnessTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:id="@+id/scienceTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:id="@+id/max_populationTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:id="@+id/populationTextView"/>
+
+                </LinearLayout>
+
+		    </LinearLayout>
+
+        </HorizontalScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>

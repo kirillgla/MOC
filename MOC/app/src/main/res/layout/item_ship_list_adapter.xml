@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_space">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/ship01"
+        android:textColor="@color/text_color_base"
+        android:gravity="center"
+        android:id="@+id/adapter_ship_0"
+        android:text="ERR"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/ship01"
+        android:textColor="@color/text_color_base"
+        android:gravity="center"
+        android:id="@+id/adapter_ship_1"
+        android:text="ERR"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/ship01"
+        android:textColor="@color/text_color_base"
+        android:gravity="center"
+        android:id="@+id/adapter_ship_2"
+        android:text="ERR"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/ship01"
+        android:textColor="@color/text_color_base"
+        android:gravity="center"
+        android:id="@+id/adapter_ship_3"
+        android:text="ERR"/>
+
+</LinearLayout>

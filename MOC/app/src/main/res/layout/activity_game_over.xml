@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/background_main"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:id="@+id/background">
+	
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:layout_margin="5dp"/>
+
+	<LinearLayout
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/layout_main"
+		android:background="@color/background_base">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:id="@+id/header"
+			style="@style/MainTextStyle"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/mainText"
+			style="@style/MainTextStyle"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			style="@style/MainButtonStyle"
+			android:id="@+id/back"
+			android:text="@string/toMainMenu"/>
+
+	</LinearLayout>
+	
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:textColor="@color/text_color_base"
+		android:layout_margin="5dp"
+		android:gravity="bottom|left"
+		android:textSize="15sp"
+		android:layout_weight="1"
+		android:text="@string/app_version"/>
+
+</LinearLayout>

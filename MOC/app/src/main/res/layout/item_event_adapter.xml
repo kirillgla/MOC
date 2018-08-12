@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/background_base">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:id="@+id/eventImage"
+			android:src="@drawable/alert_building"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="5dp"/><!--here should be turn event image ex. building, ship, star etc-->
+
+		<HorizontalScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:background="@color/background_group">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="Frigate has reached it's destination (Elina)."
+				android:id="@+id/eventText"
+				android:gravity="center"
+				android:textColor="@color/text_color_base"
+				android:padding="5dp"/><!--should contain explanations of wtf that event is-->
+
+		</HorizontalScrollView>
+
+	</LinearLayout>
+
+	<ImageView
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_gravity="end|center_vertical"
+		android:layout_margin="5dp"
+		android:id="@+id/toStar"
+		android:src="@drawable/to_star"/> <!--should contain link to star associated with that event (or science view)-->
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:id="@+id/close"/>
+
+</LinearLayout>

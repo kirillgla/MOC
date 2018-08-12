@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:background="@color/background_base"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:src="@drawable/alert_building"
+					android:background="@color/background_group"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					style="@style/MainTextStyle.Small"
+					android:text="Name: Factory"
+					android:id="@+id/nameTextView"
+					android:layout_weight="1"/>
+				
+				<ImageButton
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_margin="5dp"
+					android:padding="10dp"
+					android:id="@+id/rushProductionButton"
+					android:src="@drawable/rush"/>
+
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:background="@color/background_group">
+
+				<HorizontalScrollView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center">
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="0dp"
+							style="@style/MainTextStyle.Small"
+							android:text="very long comment"
+							android:id="@+id/commentTextView"/>
+
+					</LinearLayout>
+
+				</HorizontalScrollView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					style="@style/MainTextStyle.Small"
+					android:text="Production: 0/40"
+					android:id="@+id/productionTextView"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					style="@style/MainTextStyle.Small"
+					android:layout_weight="1"
+					android:id="@+id/maintenanceTextView"
+					android:text="Maint.: 1.25$"/>
+
+			</LinearLayout>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:id="@+id/progressSeekBar"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<Button
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				style="@style/MainButtonStyle"
+				android:layout_margin="5dp"
+				android:text="&#9650;"
+				android:id="@+id/move_up"/>
+			
+			<ImageButton
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:background="@color/background_group"
+				android:src="@drawable/close_background"
+				android:id="@+id/delete"
+				android:padding="5dp"
+				android:layout_margin="5dp"/>
+
+			<Button
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				style="@style/MainButtonStyle"
+				android:layout_margin="5dp"
+				android:text="&#9660;"
+				android:id="@+id/move_down"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

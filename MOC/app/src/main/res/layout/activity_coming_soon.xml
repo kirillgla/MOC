@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:happy_android="http://schemas.android.com/apk/res/android"
+    happy_android:layout_width="fill_parent"
+    happy_android:layout_height="fill_parent"
+    happy_android:background="@color/background_main"
+    happy_android:gravity="center"
+    happy_android:id="@+id/background"
+    happy_android:orientation="vertical">
+
+    <LinearLayout
+        happy_android:layout_width="wrap_content"
+        happy_android:layout_height="wrap_content"
+        happy_android:id="@+id/layout_main"
+        happy_android:orientation="vertical"
+        happy_android:layout_gravity="center"
+        happy_android:background="@color/background_base">
+
+        <TextView
+            happy_android:layout_width="wrap_content"
+            happy_android:layout_height="wrap_content"
+			style="@style/MainTextStyle"
+            happy_android:text="@string/coming_soon"/>
+
+        <Button
+            happy_android:layout_width="fill_parent"
+            happy_android:layout_height="wrap_content"
+            happy_android:text="@string/back"
+            happy_android:id="@+id/back"
+			style="@style/MainButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

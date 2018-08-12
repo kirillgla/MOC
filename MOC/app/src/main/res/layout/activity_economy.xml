@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:background="@color/background_space">
+	
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:id="@+id/layout_main"
+		android:background="@color/background_main"
+		android:orientation="vertical">
+		
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:background="@color/background_base">
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:text="@string/economy"
+				style="@style/MainTextStyle"/>
+			
+		</FrameLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:layout_margin="5dp"
+				android:background="@color/background_base">
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/income"
+					style="@style/MainTextStyle.Small"/>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						style="@style/MainTextStyle.Smaller"
+						android:text="@string/taxes"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:id="@+id/taxTextView"
+						style="@style/MainTextStyle.Smaller"
+						android:text="error"/>
+
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						style="@style/MainTextStyle.Smaller"
+						android:text="@string/trade"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:id="@+id/tradeTextView"
+						style="@style/MainTextStyle.Smaller"
+						android:text="error"/>
+					
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:layout_margin="5dp"
+				android:background="@color/background_base">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/costs"
+					style="@style/MainTextStyle.Small"/>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						style="@style/MainTextStyle.Smaller"
+						android:text="@string/maintenance_short_ship"/>
+					
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:id="@+id/shipMaintTextView"
+						style="@style/MainTextStyle.Smaller"
+						android:text="error"/>
+					
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						style="@style/MainTextStyle.Smaller"
+						android:text="@string/maintenance_short_building"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:id="@+id/buildingMaintTextView"
+						style="@style/MainTextStyle.Smaller"
+						android:text="error"/>
+
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_margin="5dp"
+			android:background="@color/background_base">
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				style="@style/MainTextStyle.Small"
+				android:text="@string/total"/>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:id="@+id/total"
+				style="@style/MainTextStyle.Small"
+				android:text="error"/>
+			
+		</LinearLayout>
+		
+		<!--TODO график наполненности казны-->
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/MainButtonStyle"
+			android:text="@string/done"
+			android:id="@+id/done"/>
+		
+	</LinearLayout>
+	
+</LinearLayout>

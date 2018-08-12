@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="ai_names">
+		<item>Dark Ones</item>
+		<item>Bright Ones</item>
+		<item>Opponent 3</item>
+		<item>Opponent 4</item>
+		<item>Opponent 5</item>
+		<item>Opponent 6</item>
+	</string-array>
+</resources>
